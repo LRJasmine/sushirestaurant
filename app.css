@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#homepage {
+  background-image: url('images/restaurant_1.png');
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+  height: calc(100vh - 100px);;
+  width: calc(100vw - 100px);;
+  margin: 0;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+#homewelcome {
+  font-weight: 300;
+}
+#homeintro {
+  font-weight: 100;
+  font-size: 16px;
+  max-width: 500px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#homebuttons{
+  margin-top: 40px;
+}
+.homebtn {
+  padding: 10px 30px 10px 30px;
+}
+
+#menuarrowleft {
+  position: absolute;
+/*   display: flex;
+  align-self: center; */
+  margin-left: 20px;
+  left: 0;
+}
+#menuarrowright {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  margin-right: 20px;
+  right: 0;
+}
+
+.sidenav {
+  background-color: black;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: calc(48px + 40px);
+  font-weight: 900;
+  font-size: 48px;
+  margin-right: 50px;
+}
+.sidenav a {
+  font-size: 48px !important;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  border: red solid 1px;
+}
+.sidenav a:first-child{
+  color: #F1D5BB;
+}
+.sidenav a:active, .sidenav a:hover{
+  background-color: #F1D5BB;
+  color: black;
+}
+.sidenav a>span{
+  font-size: 48px !important;
+}
