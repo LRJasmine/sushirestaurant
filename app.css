@@ -59,22 +59,28 @@ html, body {
   border-radius: 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretc;
   justify-content: space-evenly;
+  min-width: calc(48px + 40px);
   max-width: calc(48px + 40px);
+  max-height: 850px;
   font-weight: 900;
   font-size: 48px;
   margin-right: 50px;
+  padding: 0;
+  overflow: hidden;
+
 }
 .sidenav a {
   font-size: 48px !important;
   padding: 20px;
   color: white;
   text-decoration: none;
-  border: red solid 1px;
+  margin: 0;
 }
 .sidenav a:first-child{
   color: #F1D5BB;
+  flex-shrink: 1;
 }
 .sidenav a:active, .sidenav a:hover{
   background-color: #F1D5BB;
@@ -82,4 +88,30 @@ html, body {
 }
 .sidenav a>span{
   font-size: 48px !important;
+}
+#menupage {
+  display: flex;
+  margin: 30px 50px 30px 50px;
+}
+#menumain h1 {
+  font-weight: 400;
+  border-bottom: solid 3px #F1D5BB;
+  display: inline-block
+}
+#menulist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  
+}
+#menulist li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer{
+  padding: 20px 0px 20px 0px; 
 }
