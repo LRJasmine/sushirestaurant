@@ -1,4 +1,4 @@
-let menuitems = [
+let menuitemsobj = [
   {
     menuimgurl: 'rectangle_9',
     itemname: 'Smashed Avo'
@@ -36,7 +36,7 @@ let menuitems = [
 const menuitemsdiv = document.getElementById('menulist');
 
 function loadMenu() {
-  for (item of menuitems) {
+  for (item of menuitemsobj) {
     let li = document.createElement("li");
     let img = document.createElement("img");
     let p = document.createElement("p");
