@@ -137,7 +137,7 @@ function loadCart() {
 
     cartitemsdiv.appendChild(li);
   }
-} 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
+}
 
 function goToMenu() {
   window.location.assign('menu.html');
