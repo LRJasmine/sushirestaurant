@@ -141,7 +141,7 @@ function loadCart() {
 
 function goToMenu() {
   // window.location.assign('menu.html');
-  window.location.href = '/menu.html';
+  window.location.href = 'menu.html';
 }
 function goToCart() {
   window.location.assign('/cart.html');
