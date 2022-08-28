@@ -137,14 +137,13 @@ function loadCart() {
 
     cartitemsdiv.appendChild(li);
   }
-}
+} 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
 
 function goToMenu() {
-  // window.location.assign('menu.html');
-  window.location.href = 'menu.html';
+  window.location.assign('menu.html');
 }
 function goToCart() {
-  window.location.assign('/cart.html');
+  window.location.assign('cart.html');
 }
 function alerting() {
   alert("works");
