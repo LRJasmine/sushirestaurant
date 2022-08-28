@@ -92,6 +92,10 @@ html, body {
 .sidenav a>span{
   font-size: 48px !important;
 }
+.pinkbg {
+  background-color: #F1D5BB;
+  color: black !important;
+}
 .menucartpage {
   display: flex;
   margin: 30px 50px 30px 50px;
@@ -116,22 +120,6 @@ html, body {
   flex-direction: column;
   align-items: center;
 }
-#cartlist {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0; 
-}
-#cartlist li {
-  list-style: none;
-  display: flex;
-  border: 1px solid red;
-  gap: 5%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
 
 .menuitems {
   display: flex;
@@ -149,16 +137,84 @@ html, body {
   flex-wrap: wrap;
   gap: 40px;
   justify-content: space-between;
-  padding: 30px;
 }
-.pinkbg{
+.cartmain > div {
+  flex-grow: 1;
+}
+.cartmain>div:first-child {
+  flex-grow: 2;
+}
+.cartdetails{
   background-color: #F1D5BB;
+  padding: 10px 30px 30px 30px;
+}
+#cartlist {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0; 
+  flex-grow: 1;
+}
+#cartlist li {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.carttotal{
+  background-color: #F1D5BB;
+  padding: 10px 30px 30px 30px;
+}
+.carttotal > button {
+  color: white;
+  display: block;
+  background-color: black;
+  padding: 10px 40px 10px 40px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.cartsubtotal {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.promo {
+  background-color: #ffffff;
+  padding: 0px 30px 30px 30px;
+  border: solid #F1D5BB;
+  border-width: 0px 1px 1px 1px;
+}
+.promo > p, .carttotal > p{
+  font-size: 24px;
+  word-wrap: break-word;
+}
+.promo > input {
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+.promo > button {
+  color: white;
+  background-color: black;
+  padding: 10px 40px 10px 40px;
+  margin-top: 20px;
 }
 .cartcheckout {
   display: flex;
   flex-direction: column;
 }
-.cartimgdiv, .cartimgdiv img {
+.namepricediv{
+  flex-grow: 2;
+  max-width: 200px;
+}
+.cartimgdiv img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -170,7 +226,8 @@ html, body {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  flex-basis: 100%;
+  justify-self: flex-end;
+  flex-grow: 1;
 }
 .namepricediv p:first-child{
   font-weight: 500;
@@ -197,7 +254,6 @@ html, body {
   background-color: white;
   padding: 5px 10px 5px 10px;
 }
-
 .footer{
   padding: 20px 0px 20px 0px; 
 }

@@ -11,9 +11,8 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body>
-  <main id="cartpage">
-    <div>Cart</div>
+<body onload="loadCart()">
+  <div class="menucartpage">
     <nav class="sidenav">
       <a id="navslogo" href="/">S.</a>
       <a id="navshome" href="/">
@@ -26,7 +25,7 @@
           restaurant_menu
         </span>
       </a>
-      <a id="navcart" href="/cart.html">
+      <a id="navcart" class="pinkbg" href="/cart.html">
         <span class="material-symbols-rounded">
           shopping_cart
         </span>
@@ -42,8 +41,31 @@
         </span>
       </a>
     </nav>
-  </main>
-  <footer class="footer">Copyright &copy; 2021 Sushi Restaurant</footer>
+    <main class="pagemain">
+      <h1>CART</h1>
+      <div class="cartmain">
+        <div class="cartdetails">
+          <ul id="cartlist"></ul>
+        </div>
+        <div class="cartcheckout">
+          <div class="carttotal">
+            <p>Your Subtotal</p>
+            <div class="cartsubtotal">
+              <p>Subtotal</p>
+              <p>$<span>80.00</span></p>
+            </div>
+            <button>Confirm Order</button>
+          </div>
+          <div class="promo">
+            <p>Promo Code</p>
+            <input type="text" placeholder="enter promo code" />
+            <button>Apply</button>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">Copyright &copy; 2021 Sushi Restaurant</footer>
+    </main>
+  </div>
   <script src="app.js"></script>
 </body>
 

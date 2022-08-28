@@ -68,7 +68,7 @@ function loadMenu() {
     let img = document.createElement("img");
     let p = document.createElement("p");
     img.classList.add("menuimg");
-    -p.classList.add("menuitemname");
+    p.classList.add("menuitemname");
     let text = document.createTextNode(item.itemname);
     p.appendChild(text);
     img.src = "images/" + item.menuimgurl + ".png";
@@ -77,7 +77,6 @@ function loadMenu() {
     menuitemsdiv.appendChild(li);
   }
 }
-loadCart();
 function loadCart() {
   for (item of cartitemsobj) {
     let li = document.createElement("li");
@@ -108,17 +107,17 @@ function loadCart() {
     editcartitem.classList.add("editcartitem");
     let quantitydiv = document.createElement("div");
     quantitydiv.classList.add("quantitydiv");
-    
+
     let descquantitybtn = document.createElement("button");
     let descbtntext = document.createTextNode("-");
     descquantitybtn.appendChild(descbtntext);
     quantitydiv.appendChild(descquantitybtn);
-    
+
     let quantityp = document.createElement("p");
     let quantitytext = document.createTextNode(item.cartitemquantity);
     quantityp.appendChild(quantitytext);
     quantitydiv.appendChild(quantityp);
-    
+
     let incquantitybtn = document.createElement("button");
     let incbtntext = document.createTextNode("+");
     incquantitybtn.appendChild(incbtntext);
@@ -133,16 +132,15 @@ function loadCart() {
     removeitembtn.appendChild(removeitemtext);
     removeitemdiv.appendChild(removeitembtn);
     editcartitem.appendChild(removeitemdiv);
-    
+
     li.appendChild(editcartitem);
-    
+
     cartitemsdiv.appendChild(li);
   }
 }
 
 function goToMenu() {
   window.location.assign('/menu.html');
-  loadMenu();
 }
 function goToCart() {
   window.location.assign('/cart.html');
